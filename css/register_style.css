@@ -1,0 +1,98 @@
+.logo{
+    background-image:url(../images/book-logo.png);
+    width:100%;
+    height:6rem;
+    color:white;
+}
+
+.signup-form{
+    width:100%;
+    height:60rem;
+    //background-color:yellow;
+}
+
+.first-layer{
+    background-color:#006341;
+    width:40rem;
+    height:45rem;
+    box-shadow: -30px 30px 15px rgba(0, 0, 0, 0.3);
+    //position:absolute;
+    //top:27rem;
+    //left:7rem;
+    padding-top:3rem;
+    margin-left:16rem;
+}
+
+.second-layer{
+    background-color:#006341;
+    width:40rem;
+    height:48rem;
+    margin-top:-38rem;
+    margin-left:31rem;
+    box-shadow: -30px 30px 15px rgba(0, 0, 0, 0.3);
+}
+
+.third-layer{
+    background-color:#f0f0f0;
+    width:40rem;
+    height:48rem;
+    margin-top:-53rem;
+    margin-left:23rem;
+    text-align:center;
+    line-height:3rem;
+    box-shadow: -30px 15px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.form-head{
+    padding-top:3rem;
+    font-size:2.3rem;
+}
+
+img{
+    width:10rem;
+    height:10rem;
+    padding-top:1rem;
+}
+
+.t-box, .r-btn{
+    width:50%;
+    font-size:1.05rem;
+    height:1.8rem;
+    border-style:none;
+    border-radius:5px;
+    box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.t-box:hover{
+   // transition:0.6s;
+    box-shadow: -7px 7px 4px rgba(0, 0, 0, 0.3);
+}
+
+.r-btn{
+    font-size:1.5rem;
+    color:white;
+    background-color:darkgreen;
+}
+
+.r-btn:hover{
+    transition:0.5s;
+    background-color:red;
+    cursor:pointer;
+}
+
+.already-acnt a{
+    text-decoration:none;
+    color:blue;
+    font-size:1.1rem;
+}
+
+.already-acnt a:hover{
+    color:red;
+    transition:0.3s;
+}
+
+.already-acnt{
+    font-size:1.1rem;
+}
+

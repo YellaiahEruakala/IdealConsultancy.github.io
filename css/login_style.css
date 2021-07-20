@@ -1,0 +1,20 @@
+.login-layer{
+    width:30%;
+    margin-left:15rem;
+    height:40rem;
+    background-color:pink;
+    text-align:center;
+    line-height:3rem;
+    background-color:white;
+    box-shadow:-20px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.right-log{
+    width:40rem;
+    height:40rem;
+    margin-left:27.2rem;
+    margin-top:-36.1rem;
+    //background-color:green;
+    //background-image:url(../images/book-shelf.png);
+    box-shadow:20px -20px 10px rgba(0, 0, 0, 0.3);
+}

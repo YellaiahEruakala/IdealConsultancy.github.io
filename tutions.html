@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultancy</title>
+    <script src="https://kit.fontawesome.com/ac634086fd.js" crossorigin="anonymous"></script>
+    <link href="{% static 'css/home_style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/service_style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/tutions_style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <section class="head-sec">
+        <header>
+
+        </header>
+        <p class="social-head">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp-square"></i></a>
+        </p>
+    </section>
+    <section class="logo-sec">
+        <div class="logo" style="height:6rem;">
+            <p class="logo-text">
+                Ideal Consultancy
+            </p>
+
+                <ul>
+                    <li><a href="/">Home</a>
+                    <li><a href="register">Register</a>
+                    <li><a href="contact">Contact</a>
+                    <li><a href="about">About</a>
+                </u>
+
+        </div>
+
+
+    <section class="tution-sec">
+        <div class="service-text">
+            <p class="service-text1">All Hot Tutions</p>
+            <p class="service-text2">HERE WE ARE PRESENTING THE TOP TUTIONS</p>
+        </div>
+    </section>
+    <section class="card-sec">
+        <div class="tution-card">
+            <div class="card-row">
+                {% for i in student %}
+                <div class="card-col">
+                    <div class="card">
+                        <img src="{% static 'images/book.png' %}">
+                        <p class="t-text">Tution ID: {{i.id}}</br>
+                            Name : {{i.s_fname}}</br>
+                            Class : {{i.s_class}}</br>
+                            Subjects : {{i.subjects}}</br>
+                            Location : {{i.s_location}}</br>
+                            </p>
+                            <p class="btn"><a href="https://www.whatsapp.com/">
+                                <i class="fab fa-whatsapp-square"></i> Whatsapp</a></p>
+
+                    </div>
+                </div>
+                {% endfor %}
+                <!--<div class="card-col">
+                    <div class="card">
+                        <img src="{% static 'images/book.png' %}">
+                        <p class="t-text">Tution ID: 1</br>
+                            Name : Sathwik</br>
+                            Class: 7th</br>
+                            Subjects: Maths, Physics, Chemistry</br>
+                            Location: Tarnaka</br>
+                            Mode: Offline</p>
+                            <p class="btn"><a href="https://www.whatsapp.com/">
+                                <i class="fab fa-whatsapp-square"></i> Whatsapp</a></p>
+                    </div>
+                </div>
+
+                <div class="card-col">
+                    <div class="card">
+                        <img src="{% static 'images/book.png' %}">
+                        <p class="t-text">Tution ID: 1</br>
+                            Name : Sathwik</br>
+                            Class: 7th</br>
+                            Subjects: Maths, Physics, Chemistry</br>
+                            Location: Tarnaka</br>
+                            Mode: Offline</p>
+                            <p class="btn"><a href="https://www.whatsapp.com/">
+                                <i class="fab fa-whatsapp-square"></i> Whatsapp</a></p>
+                    </div>
+                </div>
+
+                <div class="card-col">
+                    <div class="card">
+                        <img src="{% static 'images/book.png' %}">
+                        <p class="t-text">Tution ID: 1</br>
+                            Name : Sathwik</br>
+                            Class: 7th</br>
+                            Subjects: Maths, Physics, Chemistry</br>
+                            Location: Tarnaka</br>
+                            Mode: Offline</p>
+                            <p class="btn"><a href="https://www.whatsapp.com/">
+                                <i class="fab fa-whatsapp-square"></i> Whatsapp</a></p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="foot-row">
+            <div class="foot-col">
+                <div class="foot-card">
+                    <div class="foot-first">
+                        <h1>Ideal Consultancy</h1>
+                        <p class="text-first">Phone:</br>
+                            9876543210</br></br>
+                            email:</br>
+                            ideal.consultancy@gmail.com</p>
+
+                    </div>
+                    <div class="foot-mid">
+                        <h3>Quick Links</h3>
+                        <p class="text-mid">
+                            <a href="register">Register</a></br>
+                            <a href="login">Login</a></br>
+                            <a href="contact">Contact</a></br>
+                            <a href="about">About</a></p>
+                    </div>
+                    <div class="foot-last">
+                        <h3>Social Media Links</h3>
+
+                            <p class="text-last">
+                            <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> Facebook</a></br>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i> Twitter</a></br>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a></br>
+                            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp-square"></i> Whatsapp</a>
+
+                        </p>
+                    </div>
+                    <div class="foot-down">
+                        <p class="copy-text">copy rights &copy; 2021 Ideal-Consultancy Services</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+</html>

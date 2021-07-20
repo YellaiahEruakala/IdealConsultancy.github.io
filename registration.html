@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultancy</title>
+    <script src="https://kit.fontawesome.com/ac634086fd.js" crossorigin="anonymous"></script>
+    <link href="{% static 'css/home_style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/service_style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/register_style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/registration_style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <section class="head-sec">
+        <header>
+
+        </header>
+        <p class="social-head">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp-square"></i></a>
+        </p>
+    </section>
+    <section class="logo-sec">
+        <div class="logo">
+            <p class="logo-text">
+                Ideal Consultancy
+            </p>
+
+                <ul>
+                    <li><a href="/">Home</a>
+                    <li><a href="register">Register</a>
+                    <li><a href="contact">Contact</a>
+                    <li><a href="about">About</a>
+                </ul>
+
+        </div>
+    </section>
+    {% for m in msg %}
+        {% if m == "R" %}
+
+    <h3 style="background-color:red;
+                align:center;
+                width:1250px;
+                height:30px;
+                margin-top:20px;
+                margin-left:100px;
+                border:4px;
+                color:white;
+                text-align:center;
+                box-shadow:4px -4px 2.5px rgb(0, 0, 0, 0.3);">{{msg}}
+    </h3>
+        {% endif %}
+    {% endfor %}
+    <section class="service-text-sec">
+        <div class="service-text">
+            <p class="service-text1">Registration Form</p>
+
+        </div>
+        </section>
+    <section class="signup">
+        <div class="signup-form">
+
+            <div class="third-layer" style="height:72rem;">
+                <p class="form-head">Registration Here</p>
+                <img src="{% static 'images/avatar.png' %}">
+                <form method="post" action="sub_registration">
+                    {% csrf_token %}
+                    <h2>Student Details</h2>
+                    User Name : <input type="text" placeholder="Registered User Name" class="t-box" name="uname"></br>
+                    Age : <input type="text" placeholder="Enter your age" class="t-box" name="age"></br>
+                    Class : <input type="text" placeholder="Enter your class" class="t-box" name="sclass"></br>
+                    Student Gender : <select style="width:12rem; height:1.5rem;" name="sgender">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select></br>
+                    Tutor Required : <select style="width:12rem; height:1.5rem;" name="tgender">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select></br>
+                    Subjects : <textarea maxlength="300" placeholder="Enter your tution subjects"
+                                         style="width:18rem; height:5rem;" name="ssub"></textarea></br>
+                    <h2>Parent Details</h2>
+                    Parent Name : <input type="text" placeholder="Parent Name" class="t-box" name="pname"></br>
+                    Parent Mobile : <input type="text" placeholder="Mobile number" class="t-box" name="pmobile"></br>
+                    Location : <input type="text" placeholder="Area Name" class="t-box" name="slocation"></br>
+                    <input type="submit" class="r-btn">
+                </form>
+
+                <p class="already-acnt">Already have an account?</br><a href="login">Log In</a></p>
+            </div>
+        </div>
+    </section>
+        <section class="service-text-sec">
+        <div class="service-text" style="padding-top:15rem;">
+            <p class="service-text1">Our Services</p>
+            <p class="service-text2">SOME TEXT TO BE PRESENT HERE</p>
+        </div>
+        </section>
+    <section>
+        <div class="serv-row">
+            <div class="serv-col">
+                <div class="servcard">
+                    <img src="{% static 'images/avatar.png' %}">
+                    <p class="s-text">We are providing best </br>
+                        experienced tutors for your bright </br>
+                        future they going to guide you </br>
+                        in all aspects with easy eaxamples</p>
+                </div>
+            </div>
+
+            <div class="serv-col">
+                <div class="servcard">
+                    <img src="{% static 'images/24_7.png' %}">
+                    <p class="s-text">We are providing best </br>
+                        experienced tutors for your bright </br>
+                        future they going to guide you </br>
+                        in all aspects with easy eaxamples</p>
+                </div>
+            </div>
+
+            <div class="serv-col">
+                <div class="servcard">
+                    <img src="{% static 'images/users.png' %}">
+                    <p class="s-text">We are providing best </br>
+                        experienced tutors for your bright </br>
+                        future they going to guide you </br>
+                        in all aspects with easy eaxamples</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="foot-row">
+            <div class="foot-col">
+                <div class="foot-card">
+                    <div class="foot-first">
+                        <h1>Ideal Consultancy</h1>
+                        <p class="text-first">Phone:</br>
+                            9876543210</br></br>
+                            email:</br>
+                            ideal.consultancy@gmail.com</p>
+
+                    </div>
+                    <div class="foot-mid">
+                        <h3>Quick Links</h3>
+                        <p class="text-mid">
+                            <a href="register">Register</a></br>
+                            <a href="login">Login</a></br>
+                            <a href="contact">Contact</a></br>
+                                <a href="about">About</a></p>
+                    </div>
+                    <div class="foot-last">
+                        <h3>Social Media Links</h3>
+
+                            <p class="text-last">
+                            <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> Facebook</a></br>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i> Twitter</a></br>
+                            <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i> Instagram</a></br>
+                            <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp-square"></i> Whatsapp</a>
+
+                        </p>
+                    </div>
+                    <div class="foot-down">
+                        <p class="copy-text">copy rights &copy; 2021 Ideal-Consultancy Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
